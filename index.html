@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="calculator">
+        <div class="c1">
+            <p>
+                0
+            </p>
+        </div>
+        <div class="c2">
+            <button class="b" onclick="calculate('AC')">
+                AC
+            </button>
+            <button class="b" onclick="calculate('DEL')">
+                DEL
+            </button>
+            <button class="s" onclick="calculate('%')">
+                %
+            </button>
+            <button class="s" onclick="calculate('/')">
+                /
+            </button>
+
+        </div>
+        <div class="c3">
+            <button class="a" onclick="calculate(7)">
+                7
+            </button>
+            <button class="a" onclick="calculate(8)">
+                8
+            </button>
+            <button class="a" onclick="calculate(9)">
+                9
+            </button>
+            <button class="s" onclick="calculate('*')">
+                *
+            </button>
+        </div>
+        <div class="c4">
+            <button class="a" onclick="calculate(4)">
+                4
+            </button>
+            <button class="a" onclick="calculate(5)">
+                5
+            </button>
+            <button class="a" onclick="calculate(6)">
+                6
+            </button>
+            <button class="s" onclick="calculate('-')">
+                -
+            </button>
+
+        </div>
+        <div class="c5">
+            <button class="a" onclick="calculate(1)">
+                1
+            </button>
+            <button class="a" onclick="calculate(2)">
+                2
+            </button>
+            <button class="a" onclick="calculate(3)">
+                3
+            </button>
+            <button class="s" onclick="calculate('+')">
+                +
+            </button>
+
+        </div>
+        <div class="c6">
+            <button class="a" onclick="calculate('00')">
+                00
+            </button>
+            <button class="a" onclick="calculate(0)">
+                0
+            </button>
+            <button class="a" onclick="calculate('.')">
+                .
+            </button>
+            <button class="e" onclick="calculate('=')">
+                =
+            </button>
+
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
