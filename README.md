@@ -1,2 +1,12 @@
 # SIMPLE-CALCULATOR
 Project made by using html,css and java.
+
+## Features
+-It is a simple calculator that calculates any expression provided by user.
+
+## What I Learned
+-More about javascript.
+-how to manipulate DOM.
+-how to use the element of html as a string and manipulate it.
+
+
