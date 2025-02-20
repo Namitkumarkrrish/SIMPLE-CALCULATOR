@@ -9,4 +9,5 @@ Project made by using html,css and java.
 -how to manipulate DOM.
 -how to use the element of html as a string and manipulate it.
 
-
+## To Experience the Calculator
+-Go to https://namitkumarkrrish.github.io/SIMPLE-CALCULATOR/.
