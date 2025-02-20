@@ -8,11 +8,11 @@ function calculate(ui){
             for(let i=0;i<digit.innerText.length-1;i++){
                 k=k+digit.innerText[i];
             }
-            let val=eval(k);
+            let val = eval(k.replace(/^0+(\d)/, '$1'));
             digit.innerHTML=val;
         }
         else{
-            let val=eval(digit.innerText);
+            let val = eval(digit.innerText.replace(/^0+(\d)/, '$1'));
             digit.innerHTML=val;
         }
     }
