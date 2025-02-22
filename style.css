@@ -3,22 +3,21 @@
     color: white;
 }
 body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: white;
     background-image: url(cal2.webp);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .calculator{
-    height:80%;
-    width: 33%;
+    min-height:80vh;
+    width: 90%;
+    max-width: 33vw;
     background-color: #BDBDBD;
     margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     box-shadow: 10px 10px 10px black;
     border-radius: 20px;
 }
@@ -34,7 +33,7 @@ body{
     border-radius: 20px;
 }
 p{
-    font-size: 70px;
+    font-size: 3.6rem;
     color: #FFD700;
 }
 .c2{
@@ -79,6 +78,9 @@ p{
 }
 button:hover{
     cursor: pointer;
+}
+button:active {
+    transform: scale(0.95);
 }
 .a{
     height: 80%;
@@ -125,4 +127,40 @@ button:hover{
     border: 2px solid black;
     background-color: #E8F5E9;
     box-shadow: 3px 3px 3px black;
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        width: 90%; /* Adjust size for small screens */
+        min-width: 400px;
+        /* height: auto; */
+        max-height: 600px;
+    }
+}
+@media (min-width: 500px) and (max-width:1000px){
+    .calculator {
+        width: 80%; /* Adjust size for small screens */
+        min-width: 500px;
+        height: auto;
+    }
+}
+@media (min-width: 1000px) and (max-width:1500px) {
+    .calculator {
+        min-width: 50%; 
+        
+        height: auto;
+    }
+    p{
+        font-size: 4rem;
+    }
+}
+@media (min-width: 1500px) and (max-width:2000px) {
+    .calculator {
+        max-width: 50vw;
+        height: auto;
+
+    }
+    p{
+        font-size: 5rem;
+    }
 }
